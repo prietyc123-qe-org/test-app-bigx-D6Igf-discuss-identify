@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-powd
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-iotx-tenant/test-app-bigx/test-component-powd@sha256:33bb5641dbbc91f29b59c3465557949991c9901b4a6fbd58f763898ef203a82d
+        name: my-python
+        resources: {}
+status: {}
